@@ -46,19 +46,6 @@ it belongs to, the engine finds the governing contract mechanism (for example th
 NEC4 8-week awareness bar in clause 61.3), computes the deadline and days
 remaining, and returns a colour-coded status with a plain-language rationale.
 
-This is the engine behind the "Contract Clock" surface described in the RCE
-business plan (§4.3).
-
-## Why it matters
-
-| Business-plan reference | How this engine delivers it |
-| --- | --- |
-| §2.2 — earlier recognition matters | Makes time-sensitivity visible while action is still possible |
-| §4.3 — Contract Clock | This is that feature, as deterministic, testable code |
-| §5.3 — "rules first" (Stage 1) | Transparent rules, no training data required |
-| §6.3 / §16 — defensible IP | The timing logic and contract mappings are proprietary assets |
-| §23.2 — future contract expansion | New contracts are added as **profiles**, not code changes |
-
 ## How it works
 
 The engine maps *days remaining* in the configured window onto a status:
