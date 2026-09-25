@@ -1,0 +1,28 @@
+{
+  "name": "@rce/contract-clock",
+  "version": "0.1.0",
+  "description": "Contract Clock — timing-intelligence engine for the Construction Reality Contract Engine (RCE). Turns configured NEC4 contract windows into a live green/amber/red/expired priority signal.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "src"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "tsx examples/demo.ts"
+  },
+  "keywords": ["construction", "nec4", "contract", "compensation-event", "deadline", "rce"],
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  }
+}
